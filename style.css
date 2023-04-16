@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(223, 218, 226);
+    
+}
+
+
+
+.circle{ 
+    position: absolute;
+    left: 48%;
+    height: 15px;
+    width: 15px;
+    top: 48%;
+    background-color: black;
+    border-radius: 50%;
+    z-index: 2;
+
+}
+.clock{
+
+    height: 400px;
+    width: 90%;
+    box-shadow: 20px 20px 50px 10px inset;
+    max-width:400px;
+    position: relative;
+    background-image: url(/img/clock.png);
+    background-position:center ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-name: danny;
+    animation-fill-mode: none;
+    animation-direction:alternate-reverse ;
+    animation-duration: 15s;
+    animation-iteration-count:infinite;
+    
+}
+@keyframes danny{
+    0%{box-shadow:20px 20px 50px 10px rgba(rgb(148, 66, 116)) inset;}
+   25%{box-shadow:20px 20px 50px 10px rgb(223, 49, 49) inset;}
+   50%{box-shadow:20px 20px 50px 10px blue inset ;}
+   75%{box-shadow:20px 20px 50px 10px gray inset}
+   100%{box-shadow: 20px 20px 50px 10px rgb(90, 149, 204) inset}
+}
+
+
+.sec,
+.min,
+.hour {
+    position: absolute;
+    left: 50%;
+    height: 5px;
+    width: 35%;
+    top: 50%;
+    background-color: black;
+    border-radius: 30%;
+    transform: rotate(-90deg) ;
+    transform-origin: left; 
+}
+.sec{
+   background-color: red;
+   z-index: 1;
+}
+.hour{
+    width:28% ;
+}
+
+/* set alarm */
+
+input{
+    width: 50px;
+    outline: none;
+    border: none;
+    border: 2px solid black;
+;
+}
+select{
+    outline:none ;
+    border: none;
+    border: 1px solid black;;
+}
+#set-alarm{
+    background-color:blue;
+    color: black;
+    padding: 5px;
+}
+#clear-alarm{
+    width: 50px;
+    background-color: red;
+    color:black;
+}
+label{
+   padding: 5px;
+}
+.alarm{
+    bottom: 90%;
+}
+form{
+    display: flex;
+    color: black;
+    justify-content:space-between ;
+
+    height: 20px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow:5px 5px 5px  ;
+    /* background-image:  linear-gradient(to left, rgba(41, 32, 32, 0), rgb(136, 136, 145)); */
+}

@@ -1,0 +1,52 @@
+{
+    "name": "Analog Clock",
+    "short_name": "clock",
+    "start_url": "./",
+    "display": "standalone",
+    "description": "this is an analog clock with an alarm",
+    "lang": "en ",
+    "dir": "auto",
+    "theme_color": "#dfdae2",
+    "background_color": "#dfdae2",
+    "orientation": "portrait",
+    "icons": [
+      {
+        "src": "icons/icon-512.png",
+        "size": "512x512",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/icon-1024.png",
+        "size": "1024x1024",
+        "type": "image/png"
+      },
+      {
+        "src": "icons/maskable_icon_x512 (1).png",
+        "size": "512x512",
+        "type": "image/png",
+        "purposes": "maskable"
+      }
+],
+"screenshots": [
+    {
+        "src": "https://www.pwabuilder.com/assets/screenshots/screen1.png",
+        "sizes": "2880x1800",
+        "type": "image/png",
+        "description": "A screenshot of the home page"
+    }
+],
+"related_applications": [
+    {
+        "platform":"windows",
+        "url": "https://dannycruise9.github.io/Analog_clock/ "
+    }
+],
+"prefer_related_applications": false,
+"shortcuts": [
+    {
+        "name":"Analog clock",
+        "url":"./shortcut",
+        "description":"A description of the functionality of this shortcut"
+    }
+]
+}
